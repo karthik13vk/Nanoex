@@ -1,0 +1,104 @@
+$mobile: 480px;
+$tablet767: 767px;
+$tablet768: 768px;
+$laptopmini991: 992px;
+$laptopmini992: 992px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+.keyfeature-section {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./../img/keyfeature.jpeg) no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.4;
+  }
+  .row {
+    position: relative;
+    z-index: 1;
+  }
+  .keyfeature-inner {
+    .col-lg-3.col-md-6 {
+      &:nth-child(1) {
+        .keyfeature-box {
+          background: linear-gradient(#000) padding-box,
+            linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+          border-radius: 20px;
+          border: 2px solid transparent;
+          backdrop-filter: blur(20.9px);
+          -webkit-backdrop-filter: blur(20.9px);
+          .keyfeature-content {
+            backdrop-filter: blur(20.899999618530273px);
+            background: linear-gradient(180deg, #56c690 0%, #74620b 100%);
+            @media (max-width: $laptopmini991) {
+              background: transparent;
+            }
+          }
+          @media (max-width: $laptopmini991) {
+            background: linear-gradient(#000) padding-box,
+              linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+          }
+        }
+      }
+    }
+    .keyfeature-box {
+      text-align: center;
+      margin-bottom: 30px;
+
+      background: linear-gradient(#000) padding-box,
+        linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+      border-radius: 20px;
+      border: 2px solid transparent;
+      backdrop-filter: blur(20.9px);
+      -webkit-backdrop-filter: blur(20.9px);
+
+      .keyfeature-content {
+        padding: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 20px;
+        &:hover {
+          backdrop-filter: blur(20.899999618530273px);
+          background: linear-gradient(180deg, #56c690 0%, #74620b 100%);
+        }
+        
+      }
+      .keyfeature-title {
+        color: #fff;
+        font-size: 18px;
+        @media (min-width: $laptopmini991) and (max-width: $desktop)  {
+          height: 62px;
+        }
+      }
+      p {
+        color: #fff;
+        height: 220px;
+        @media (max-width: $tablet767) {
+          height: auto;
+        }
+        @media (min-width: $laptopmini991) and (max-width: $desktop)  {
+          height: 300px;
+    
+        }
+       
+      }
+    }
+  }
+}
+.border-line {
+  border: 2px solid transparent; /* Needed to show the gradient */
+  border-image-source: linear-gradient(270deg, #56C690 26%, #FFFFFF 100%);
+  border-image-slice: 1; /* Required to apply the gradient properly */
+  border-radius: 12px; 
+}

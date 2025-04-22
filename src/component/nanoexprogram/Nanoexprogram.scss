@@ -1,0 +1,117 @@
+$mobile: 480px;
+$tablet767: 767px;
+$tablet768: 768px;
+$laptopmini991: 992px;
+$laptopmini992: 992px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+.nanoexprogram-section {
+  position: relative;
+.heading-section{
+    @media (max-width: $tablet767) {
+        text-align: center;
+    }
+}
+
+  .container {
+    z-index: 1;
+  }
+  &::before {
+    background: url("../img/nanoexprogram-bg.png") no-repeat center center;
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+  }
+  .ecoprogram-inner-content {
+    .row{
+        .col-lg-4.col-md-6{
+            &:nth-child(1){
+                .ecoprogram-box{
+                    h4{
+                        background: linear-gradient(505deg, #D202CF -3%, #00FFCC 74%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(2){
+                .ecoprogram-box{
+                    h4{
+                        background:linear-gradient(83deg, #B3E6FF 0%, #00AAFF 20%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(3){
+                .ecoprogram-box{
+                    h4{
+                        background:linear-gradient(269deg, #FFBB00 75%, #FFF8C2 101%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(4){
+                .ecoprogram-box{
+                    h4{
+                        background: linear-gradient(273deg, #FFFFFF 0%, #999999 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(5){
+                .ecoprogram-box{
+                    h4{
+                        background: linear-gradient(270deg, #FF8800 0%, #E8A65C 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(6){
+                .ecoprogram-box{
+                    h4{
+                        background: linear-gradient(270deg, #4BA666 0%, #9FFFBC 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .ecoprogram-box {
+      border: 2px solid rgba(255, 255, 255, 1);
+      backdrop-filter: blur(80px);
+      border-radius: 15px;
+      padding: 20px 15px;
+      margin-bottom: 30px;
+      h4 {
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.4;
+        vertical-align: middle;
+        margin-bottom: 10px!important;
+        @media (max-width: $tablet767) {
+            font-size: 24px;
+            
+        }
+
+      }
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

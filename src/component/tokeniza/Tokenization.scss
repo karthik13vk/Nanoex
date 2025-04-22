@@ -1,0 +1,104 @@
+$mobile: 480px;
+$tablet767: 767px;
+$tablet768: 768px;
+$laptopmini991: 992px;
+$laptopmini992: 992px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+.tokenization-section {
+  .prizing-inner {
+    .row {
+      .col-lg-4.col-md-6 {
+        &:nth-child(1) {
+          .prizing-box {
+            .prizing-content {
+              background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+              border-radius: 10px;
+              border: 2px solid transparent;
+            }
+            h3 {
+              font-size: 75px;
+              background: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+    }
+    .prizing-box {
+      .prizing-content {
+        background: #0000004d;
+        backdrop-filter: blur(27.700000762939453px);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        background: linear-gradient(#000, #000) padding-box,
+          linear-gradient(270deg, transparent);
+        border-radius: 10px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease-out 0s;
+        h3 {
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 1.2;
+          text-align: center;
+          color: #ffffff;
+          margin-bottom: 15px !important;
+          @media (max-width: $tablet767) {
+            font-size: 60px;
+          }
+        }
+        h6 {
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 27.69px;
+          line-height: 1.2;
+          text-align: center;
+          margin-bottom: 15px !important;
+          color: #ffffff;
+        }
+        &:hover {
+          background: linear-gradient(#000, #000) padding-box,
+            linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+          border-radius: 10px;
+          border: 2px solid transparent;
+          padding: 30px 20px;
+          @media (max-width: $tablet767) {
+            border-radius: 20px;
+          }
+          
+          h3 {
+            font-size: 75px;
+            background: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @media (max-width: $tablet767) {
+              font-size: 60px;
+              // color: #ffffff;
+              background: linear-gradient(270deg, #ffffff 26%, #ffffff 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+          h6 {
+            font-size: 30px;
+            @media (max-width: $tablet767) {
+              font-size: 27.69px;
+            }
+          }
+        }
+        @media (max-width: $tablet767) {
+          background: linear-gradient(#000, #000) padding-box,
+            linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+          border-radius: 20px;
+          border: 2px solid transparent;
+          padding: 30px 20px;
+        }
+      }
+    }
+  }
+}

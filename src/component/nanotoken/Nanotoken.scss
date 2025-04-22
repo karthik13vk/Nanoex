@@ -1,0 +1,19 @@
+$mobile: 480px;
+$tablet767: 767px;
+$tablet768: 768px;
+$laptopmini991: 992px;
+$laptopmini992: 992px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+.nanotoken-section {
+    .nanotoken-content{
+        .heading-section{
+            @media (max-width: $tablet767) {
+                text-align: center;
+            }
+        }
+       
+    }
+
+}

@@ -1,0 +1,104 @@
+$mobile: 480px;
+$tablet767: 767px;
+$tablet768: 768px;
+$laptopmini991: 992px;
+$laptopmini992: 992px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+.footer-section {
+  background: linear-gradient(
+    180deg,
+    rgba(86, 198, 144, 0.2) 0%,
+    rgba(42, 96, 70, 0.2) 100%
+  );
+
+  .copyright {
+    span {
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      letter-spacing: 0.15px;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      margin-bottom: 10px;
+      display: block;
+      @media (max-width: $tablet767) {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      br {
+        display: none;
+        @media (max-width: $tablet767) {
+          display: block;
+        }
+      }
+      b {
+        background: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    p {
+      @media (max-width: $tablet767) {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
+  }
+  padding: 50px 0px 30px;
+  .footer-link {
+    ul {
+        @media (max-width: $tablet767) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 15px!important;
+        }
+      li {
+        display: inline-block;
+        padding: 10px 15px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 15px;
+          width: 2px;
+          height: 16px;
+          background: #fff;
+        }
+        a {
+          position: relative;
+          font-family: Poppins;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 27px;
+          letter-spacing: 0.15px;
+          text-align: center;
+          color: #ffffff;
+          @media (max-width: $tablet767) {
+            font-size: 15px;
+            line-height: 1.5;
+          }
+
+          &:hover {
+            background: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .footer-para {
+    p {
+      font-size: 12px;
+      font-weight: 200;
+      text-align: center;
+    }
+  }
+}

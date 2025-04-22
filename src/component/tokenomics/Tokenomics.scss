@@ -1,0 +1,83 @@
+$mobile: 480px;
+$tablet767: 767px;
+$tablet768: 768px;
+$laptopmini991: 992px;
+$laptopmini992: 992px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+.tokenomics-section {
+  .token-dis-section {
+    .token-title {
+      border: 2px solid;
+
+      //   border-image-source: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+      background: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+      font-family: League Spartan;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 61px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #000000;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      @media (max-width: $tablet767) {
+        font-size: 25px;
+        line-height: 25px;
+        border-radius: 11px;
+        padding: 8px;
+      }
+    }
+    .token-box {
+      backdrop-filter: blur(20.899999618530273px);
+      border: 2px solid;
+
+      border-radius: 18px;
+      background: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+      padding: 2px;
+      border-radius: 19.41px;
+      .token-inner {
+        border-image-slice: 1;
+        background: rgb(16, 16, 16);
+        padding: 30px 15px;
+        border-radius: 19.41px;
+        background-clip: padding-box;
+        @media (max-width: $tablet767) {
+          padding: 30px 15px;
+          height: 300px;
+        }
+        @media (min-width: $tablet768) and (max-width:$laptopmini991) {
+          height: 330px;
+        }
+      }
+      //   border-image-source: linear-gradient(270deg, #56c690 26%, #ffffff 100%);
+      ul {
+        li {
+          color: #fff;
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 1.2;
+          margin-bottom: 15px;
+          @media (max-width: $tablet767) {
+            font-size: 12px;
+            line-height: 1.5;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .token-box-two {
+      ul {
+        li {
+          font-weight: 500;
+          @media (max-width: $tablet767) {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

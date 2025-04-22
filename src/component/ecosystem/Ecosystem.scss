@@ -1,0 +1,64 @@
+$mobile: 480px;
+$tablet767: 767px;
+$tablet768: 768px;
+$laptopmini991: 992px;
+$laptopmini992: 992px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+.ecosystem-section {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 150px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #252e29;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, #56c690 0%, #f4ce14 100%);
+    border-radius: 10px;
+  }
+
+  .ecosystem-content {
+    height: 550px;
+    overflow-y: scroll;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    @media (max-width: $tablet767) {
+      height: auto;
+      padding: 0px;
+    }
+
+    .inner-content {
+      .inner-line {
+        h3 {
+          color: rgba(217, 217, 217, 1);
+
+          font-family: Poppins;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 1.2;
+          letter-spacing: 0.15px;
+          vertical-align: middle;
+          margin-bottom: 10px !important;
+
+          @media (max-width: $tablet767) {
+            font-size: 15px;
+            line-height: 1.2;
+            letter-spacing: 0.15px;
+          }
+        }
+
+        margin-bottom: 15px;
+        p {
+          @media (max-width: $tablet767) {
+            font-size: 12px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
