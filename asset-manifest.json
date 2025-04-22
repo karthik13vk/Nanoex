@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Nanoex/static/css/main.cad6cde8.css",
+    "main.css": "/Nanoex/static/css/main.28a679a8.css",
     "main.js": "/Nanoex/static/js/main.108e662a.js",
     "static/media/nanoexprogram-bg.png": "/Nanoex/static/media/nanoexprogram-bg.31a45e3668bb41c68622.png",
     "static/media/next-generation.jpeg": "/Nanoex/static/media/next-generation.d0e65a1d54c7de699fb0.jpeg",
@@ -86,11 +86,11 @@
     "static/media/twitter.png": "/Nanoex/static/media/twitter.3942109b7671a5ebea64.png",
     "static/media/reddit.png": "/Nanoex/static/media/reddit.491cebce24a112c4377a.png",
     "index.html": "/Nanoex/index.html",
-    "main.cad6cde8.css.map": "/Nanoex/static/css/main.cad6cde8.css.map",
+    "main.28a679a8.css.map": "/Nanoex/static/css/main.28a679a8.css.map",
     "main.108e662a.js.map": "/Nanoex/static/js/main.108e662a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cad6cde8.css",
+    "static/css/main.28a679a8.css",
     "static/js/main.108e662a.js"
   ]
 }
